@@ -54,7 +54,6 @@ function renderTasks(){
 function setHeaderDate(){
     dateArrays()
     headerDate.textContent = `${weekdayArray[weekday]}, ${day} ${monthsArray[month]}` 
-    console.log(weekday)
 }
 
 
@@ -117,6 +116,5 @@ function renderTasksRemaining(){
 
 function save(){
     localStorage.setItem('tasks', JSON.stringify(tasks))
-    console.log(localStorage.getItem('tasks'))
 }
 
